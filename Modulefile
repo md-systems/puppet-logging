@@ -9,4 +9,5 @@ project_page 'https://github.com/md-systems/puppet-loggin'
 dependency 'DanielRedOak/lumberjack', '~>0.0.3'
 dependency 'ispavailability/logstash', '~>0.3.3'
 dependency 'garethr/kibana', '~> 0.2.0'
+dependency 'ispavailability/elasticsearch', '~> 0.1.2'
 
