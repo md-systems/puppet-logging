@@ -1,0 +1,12 @@
+input {
+  syslog { type => "syslog" }
+}
+
+filter {
+  if [type] == "syslog" {
+    mutate {
+      replace => [ "@message", "%{message}", "host", "%{logsource}" ]
+      remove_field => [ "message", "type", "logsource" ]
+    }
+  }
+}
